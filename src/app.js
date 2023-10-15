@@ -13,7 +13,6 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
-  console.log(response.data);
 
   dateElement.innerHTML = formatDate(response.data.time * 1000);
   windElement.innerHTML = Math.round(response.data.wind.speed);
